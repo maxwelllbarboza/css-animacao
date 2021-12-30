@@ -1,0 +1,92 @@
+@keyframes animacao-caixa1{
+  from{
+    background-color: red;
+    border-radius: 50px;
+    top: 0;
+    left: 0;    
+  }
+  to{
+    background-color: yellow; 
+    border-radius: 300px;
+    transition: all 3s;     
+    left: 850px;    
+  }
+}
+@keyframes animacao-caixa2{
+  from{
+    width: 200px;
+    background-color: red;
+    border-radius: 50px;  
+    top: 0;
+    left: 0;  
+  }
+  to{
+    width: 400px;
+    height: 400px;
+    background-color: yellow; 
+    border-radius: 300px;
+    top: 150px;
+    left: 650px; 
+    
+  }
+}
+@keyframes animacao-caixa3{
+  from{
+    background-color: red;
+    border-radius: 10px; 
+    top: 0;
+    left: 0;   
+  }
+  to{
+    background-color: yellow; 
+    border-radius: 300px; 
+    top: 50px;
+    left: 950px;    
+  }
+}
+
+.barra-menu{
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: 80px;
+  background: rgba(0, 0 ,0, 0.5);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.barra-menu:hover{
+  background: rgba(20, 20, 20, 0.7);
+  height: 120px;
+  transition: all 2s;
+}
+.lista-menu{
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  gap: 50px;
+}
+.menu{
+  font-size: 22px;
+  color: #ffffff;
+  text-decoration: none;
+
+}
+.caixa1, .caixa2, .caixa3{
+  width: 200px;
+  height: 200px;
+  position: relative; 
+}
+.caixa1{
+  animation: animacao-caixa1 5s 0s 250 alternate;
+
+}
+.caixa2{
+  animation: animacao-caixa2 5s 0s 250 alternate; 
+
+}
+.caixa3{
+  animation: animacao-caixa3 5s 0s 250 alternate; 
+
+}
